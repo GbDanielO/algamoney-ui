@@ -1,0 +1,55 @@
+<div class="container">
+  <form autocomplete="off" #formPessoa="ngForm">
+    <div class="ui-g">
+      <div class="ui-g-12"><h1>Nova Pessoa</h1></div>
+
+      <div class="ui-g-12 ui-sm-12 ui-fluid">
+        <label>Nome</label>
+        <input type="text" pInputText required minlength="10" ngModel name="nome"/>
+      </div>
+
+      <div class="ui-g-10 ui-sm-12 ui-fluid">
+        <label>Logradouro</label>
+        <input type="text" pInputText  required minlength="5" ngModel name="logradouro"/>
+      </div>
+
+      <div class="ui-g-2 ui-sm-12 ui-fluid">
+        <label>Número</label>
+        <input type="number" pInputText  />
+      </div>
+
+      <div class="ui-g-4 ui-sm-12 ui-fluid">
+        <label>Complemento</label>
+        <input type="text" pInputText />
+      </div>
+
+      <div class="ui-g-4 ui-sm-12 ui-fluid">
+        <label>Bairro</label>
+        <input type="text" pInputText ngModel name="bairro" required minlength="5"/>
+      </div>
+
+      <div class="ui-g-4 ui-sm-12 ui-fluid">
+        <label>CEP</label>
+        <p-inputMask mask="99.999-999" ngModel name="cep" required></p-inputMask>
+      </div>
+
+      <div class="ui-g-6 ui-sm-12 ui-fluid">
+        <label>Cidade</label>
+        <input type="text" pInputText ngModel name="cidade" required minlength="5"/>
+      </div>
+
+      <div class="ui-g-6 ui-sm-12 ui-fluid">
+        <label>Estado</label>
+        <input type="text" pInputText ngModel name="estado" required/>
+      </div>
+
+      <div class="ui-g-12">
+        <button pButton type="submit" label="Salvar"></button>
+        <button pButton type="button" label="Novo" class="ui-button-info"></button>
+        <a routerLink="/pessoas">Voltar para a pesquisa</a>
+      </div>
+
+    </div>
+  </form>
+</div>
+

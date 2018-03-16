@@ -1,0 +1,30 @@
+<div class="ui-g container">
+  <div class="ui-g-12">
+    <h1>Lançamentos</h1>
+  </div>
+
+  <div class="ui-g-12 ui-fluid">
+    <label>Descrição</label>
+    <input type="text" pInputText/>
+  </div>
+
+  <div class="ui-g-12">
+    <label>Vencimento</label><br />
+    <input type="text" pInputText style="width: 90px" />
+    <label>até</label>
+    <input type="text" pInputText style="width: 90px" />
+  </div>
+
+  <div class="ui-g-12">
+    <button pButton type="submit" label="Pesquisar"></button>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <app-lancamentos-grid [lancamentos]="lancamentos"></app-lancamentos-grid>
+    </div>
+    <div class="ui-g-12">
+      <a pButton label="Novo Lançamento" routerLink="/lancamentos/novo"></a>
+    </div>
+  </div>
+</div>

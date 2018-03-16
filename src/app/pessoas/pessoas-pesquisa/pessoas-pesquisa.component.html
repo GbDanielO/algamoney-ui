@@ -1,0 +1,22 @@
+<div class="ui-g container">
+  <div class="ui-g-12">
+    <h1>Pessoas</h1>
+  </div>
+
+  <div class="ui-g-12 ui-fluid">
+    <label>Nome</label>
+    <input type="text" pInputText />
+  </div>
+
+  <div class="ui-g-12">
+    <button pButton label="Pesquisar"></button>
+  </div>
+
+  <div class="ui-g-12">
+    <app-pessoas-grid [pessoas]="pessoas"></app-pessoas-grid>
+  </div>
+
+  <div class="ui-g-12">
+    <a pButton label="Nova Pessoa" routerLink="/pessoas/novo"></a>
+  </div>
+</div>
